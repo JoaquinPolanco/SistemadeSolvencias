@@ -658,7 +658,7 @@ class GD_Adapter implements Canvas {
       if ( !isset($options["quality"]) )
         $options["quality"] = 75;
       
-      header("Content-type: image/jpeg");
+      header("Content-type: image/png");
       imagejpeg($dst, '', $options["quality"]);
       break;
 

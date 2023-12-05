@@ -12,7 +12,7 @@
     <meta property="og:url" content="http://lipis.github.io/bootstrap-social/" />
     <meta property="og:image" content="http://lipis.github.io/bootstrap-social/assets/img/bootstrap-social.png" />
 
-    <link rel="icon" href="firmas/logou.jpeg" type="image/jpeg">
+    <link rel="icon" href="firmas/logo-unicaes-hd.png" type="image/png">
     <title>Solvencias Biblioteca</title>
     <?php include 'recursos/menu.php'; ?>
 

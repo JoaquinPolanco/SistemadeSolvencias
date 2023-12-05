@@ -8,17 +8,8 @@ include('recursos/conexion.php');
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8_spanish_ci" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="Social Buttons for Bootstrap" />
-  <meta property="og:description" content="Social Sign-In Buttons made in pure CSS based on Bootstrap and Font Awesome!" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://lipis.github.io/bootstrap-social/" />
-  <meta property="og:image" content="http://lipis.github.io/bootstrap-social/assets/img/bootstrap-social.png" />
-
-  
-
-  <link rel="icon" href="firmas/logou.jpeg" type="image/jpeg">
+  <link rel="icon" href="firmas/logo-unicaes-hd.png" type="image/png">
   <title>Solvencias Biblioteca</title>
-
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="<?php echo 'recursos/botones.css'; ?>">
 </head>
@@ -28,7 +19,7 @@ include('recursos/conexion.php');
     <div class="row">
       <div class="col-md-12">
         <br>
-        <h1><img src="firmas/logou.jpeg" alt="Logo" style="max-width: 100px; height: auto;"> Biblioteca Miguel de Cervantes </h1>
+        <h1><img src="firmas/logo-unicaes-hd.png" alt="Logo" style="max-width: 100px; height: auto;"> Biblioteca Miguel de Cervantes </h1>
         <h2>Solvencia para graduaci&oacute;n solicitada!</h2>
         <br>
 

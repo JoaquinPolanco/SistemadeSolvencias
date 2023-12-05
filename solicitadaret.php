@@ -9,7 +9,7 @@
     <meta property="og:url" content="http://lipis.github.io/bootstrap-social/" />
     <meta property="og:image" content="http://lipis.github.io/bootstrap-social/assets/img/bootstrap-social.png" />
 
-    <link rel="icon" href="firmas/logou.jpeg" type="image/jpeg">
+    <link rel="icon" href="firmas/logo-unicaes-hd.png" type="image/png">
     <title>Solvencias Biblioteca</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -21,7 +21,7 @@
       <div class="row">
         <div class="col-md-">
           <br>
-          <h1><img src="firmas/logou.jpeg" alt="Logo" style="max-width: 100px; height: auto;">  Biblioteca Miguel de Cervantes </h1>
+          <h1><img src="firmas/logo-unicaes-hd.png" alt="Logo" style="max-width: 100px; height: auto;">  Biblioteca Miguel de Cervantes </h1>
           <h2>Solvencia para retiro de ciclo solicitada!</h2>
           <br>
 
