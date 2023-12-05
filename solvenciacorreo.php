@@ -1,3 +1,7 @@
+<?php
+include('config/database.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -41,7 +45,6 @@
           </form>
 
 <?php
-include('config/database.php');
 
 /* comprueba la conexi&oacute;n */
 if (mysqli_connect_errno()) {

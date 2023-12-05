@@ -1,3 +1,7 @@
+<?php
+include('config/database.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -35,8 +39,6 @@
 <?php
 $carnet = $_GET['var1'];
 $email = $_GET['var2'];
-
-include('config/database.php');
 
 $consulta = "SELECT title, firstname, surname, othernames, userid, initials FROM borrowers WHERE userid = '$carnet'";
 

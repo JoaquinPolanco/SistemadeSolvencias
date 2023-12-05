@@ -1,3 +1,7 @@
+<?php
+include('config/database.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -220,8 +224,6 @@ http://www.catalogo.catolica.edu.sv/cgi-bin/koha/Solvencia/
 <?php
 
 header("Content-Type: text/html;charset=utf-8_spanish_ci");
-
-include('config/database.php');
 
 $codsolicitadas =  $_GET['var'];
 

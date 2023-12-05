@@ -1,3 +1,7 @@
+<?php
+include('config/database.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -28,7 +32,6 @@
           <h2>Solvencia para reingreso solicitada!</h2>
           <br>
 <?php
-include('config/database.php');
 
 $titulo = $_POST['titulo'];
 $nombre = $_POST['nombre'];

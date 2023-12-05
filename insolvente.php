@@ -1,3 +1,7 @@
+<?php
+include('config/database.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -29,8 +33,6 @@
 
           $carnet = $_GET['var1'];
           $email = $_GET['var2'];
-
-          include('config/database.php');
 
           /* comprobar la conexi&oacute;n */
           if (mysqli_connect_errno()) {

@@ -1,3 +1,7 @@
+<?php
+include('config/database.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -27,7 +31,6 @@
 
 <?php
 
-include('config/database.php');
 
 $titulo = isset($_POST['titulo']) ? $_POST['titulo'] : '';
 $nombre = isset($_POST['nombre']) ? $_POST['nombre'] : '';

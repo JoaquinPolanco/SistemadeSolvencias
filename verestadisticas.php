@@ -1,3 +1,7 @@
+<?php
+include('config/database.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -201,7 +205,6 @@
 <?php
 header("Content-Type: text/html;charset=utf-8_spanish_ci");
 
-include('config/database.php');
 $date1 = $_POST['dateinicio'];
 $date2 = $_POST['datefin'];
 

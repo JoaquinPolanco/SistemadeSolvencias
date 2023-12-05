@@ -1,3 +1,7 @@
+<?php
+include('config/database.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -201,7 +205,6 @@
 <?php
 header("Content-Type: text/html;charset=utf-8_spanish_ci");
 
-include('config/database.php');
 $year = $_POST['year'];
 
 /* comprueba la conexi&oacute;n */
