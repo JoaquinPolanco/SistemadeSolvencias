@@ -3,17 +3,17 @@ $codsolicitadas =  $_GET['var'];
 $tipo = isset($_REQUEST['t']) ? $_REQUEST['t'] : 'excel';
 $extension = '.xls';
 
-if($tipo == 'word') $extension = '.doc';
+if ($tipo == 'word') $extension = '.doc';
 
 // Si queremos exportar a PDF
-if($tipo == 'pdf'){
+if ($tipo == 'pdf') {
     require_once 'lib/dompdf/dompdf_config.inc.php';
 
     $dompdf = new DOMPDF();
-    $dompdf->load_html( file_get_contents( 'http://localhost/OPAC/pdf/archivo_pdf.php?var=$codsolicitadas' ) );
+    $dompdf->load_html(file_get_contents('http://localhost/OPAC/pdf/archivo_pdf.php?var=$codsolicitadas'));
     $dompdf->render();
     $dompdf->stream("mi_archivo.pdf");
-} else{
+} else {
     require_once 'archivo_pdf.php';
 
     header("Content-type: application/vnd.ms-$tipo");
