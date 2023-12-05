@@ -201,7 +201,7 @@
 <?php
 header("Content-Type: text/html;charset=utf-8_spanish_ci");
 
-include('recursos/conexion.php');
+include('config/database.php');
 $date1 = $_POST['dateinicio'];
 $date2 = $_POST['datefin'];
 

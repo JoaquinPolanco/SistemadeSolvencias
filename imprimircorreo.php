@@ -234,7 +234,7 @@ http://www.catalogo.catolica.edu.sv/cgi-bin/koha/Solvencia/
 
 <?php
 
-include('recursos/conexion.php');
+include('config/database.php');
 
 $codsolicitadas =  $_GET['var'];
 

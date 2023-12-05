@@ -199,7 +199,7 @@
           <h2 style="text-align: center;">Solvencias solicitadas</h2>
 
 <?php
- include('recursos/conexion.php');
+ include('config/database.php');
 $buscar = $_POST['buscar'];
 
 /* comprueba la conexi&oacute;n */

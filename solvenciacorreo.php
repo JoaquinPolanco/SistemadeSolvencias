@@ -41,7 +41,7 @@
           </form>
 
 <?php
-include('recursos/conexion.php');
+include('config/database.php');
 
 /* comprueba la conexi&oacute;n */
 if (mysqli_connect_errno()) {

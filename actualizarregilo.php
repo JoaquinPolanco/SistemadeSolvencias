@@ -1,5 +1,5 @@
 <?php
-$link = new mysqli('localhost', 'morosos', 'biblio7', 'koha_kobli');
+include('config/database.php');
 $codsolicitadas = $_GET['var'];
 
 /*

@@ -36,7 +36,7 @@
 $carnet = $_GET['var1'];
 $email = $_GET['var2'];
 
-include('recursos/conexion.php');
+include('config/database.php');
 
 $consulta = "SELECT title, firstname, surname, othernames, userid, initials FROM borrowers WHERE userid = '$carnet'";
 

@@ -27,7 +27,7 @@
 
 <?php
 
-include('recursos/conexion.php');
+include('config/database.php');
 
 $titulo = isset($_POST['titulo']) ? $_POST['titulo'] : '';
 $nombre = isset($_POST['nombre']) ? $_POST['nombre'] : '';

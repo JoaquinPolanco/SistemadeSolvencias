@@ -26,7 +26,7 @@
           <br>
 
 <?php
-include('recursos/conexion.php');
+include('config/database.php');
 
 $titulo = $_POST['titulo'];
 $nombre = $_POST['nombre'];

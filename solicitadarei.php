@@ -28,7 +28,7 @@
           <h2>Solvencia para reingreso solicitada!</h2>
           <br>
 <?php
-include('recursos/conexion.php');
+include('config/database.php');
 
 $titulo = $_POST['titulo'];
 $nombre = $_POST['nombre'];

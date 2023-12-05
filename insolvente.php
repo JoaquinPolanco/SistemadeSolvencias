@@ -30,7 +30,7 @@
           $carnet = $_GET['var1'];
           $email = $_GET['var2'];
 
-          include('recursos/conexion.php');
+          include('config/database.php');
 
           /* comprobar la conexi&oacute;n */
           if (mysqli_connect_errno()) {
