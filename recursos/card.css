@@ -1,0 +1,50 @@
+.input__container {
+    max-width: 300px; /* Aumenté el ancho máximo para mejorar la legibilidad */
+    margin: 0 auto;
+    padding: 20px; /* Ajusté el espaciado interno */
+    border-radius: 20px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.8); /* Ajusté la opacidad para una mejor legibilidad */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agregué una sombra sutil */
+  }
+  
+  .input__container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: blur(25px);
+    border-radius: 20px;
+    background-color: #9D2720;
+    background-image: radial-gradient(at 47% 69%, #F6C03D 0px, transparent 50%),
+      radial-gradient(at 100% 72%, #F6C03D 0px, transparent 50%);
+  }
+  
+  .input__label {
+    display: block;
+    margin-bottom: 10px; /* Aumenté el espacio debajo del label */
+    color: #000;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+  
+  
+  .input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 0.7em; /* Ajusté el espaciado interno */
+    border-radius: 20px;
+    background: #f2f2f2;
+    transition: background 300ms, color 300ms;
+  }
+  
+  .input:hover,
+.input:focus {
+    background: #f5f5f5;
+    color: #000; /* Cambiado a negro para mejorar la legibilidad */
+}
