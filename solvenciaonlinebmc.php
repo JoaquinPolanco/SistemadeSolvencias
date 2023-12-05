@@ -212,7 +212,7 @@
 <?php
 header("Content-Type: text/html;charset=utf-8_spanish_ci");
 
-$mysqli = new mysqli('localhost', 'morosos', 'biblio7', 'koha_kobli');
+include('config/database.php');
 
 /* comprueba la conexi&oacute;n */
 if (mysqli_connect_errno()) {

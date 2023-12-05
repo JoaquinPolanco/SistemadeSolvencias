@@ -236,7 +236,7 @@ http://www.catalogo.catolica.edu.sv/cgi-bin/koha/Solvencia/
 
 header("Content-Type: text/html;charset=utf-8_spanish_ci");
 
-$mysqli = new mysqli('localhost', 'morosos', 'biblio7', 'koha_kobli');
+include('config/database.php');
 
 $codsolicitadas =  $_GET['var'];
 
