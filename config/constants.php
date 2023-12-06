@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-define('ROOT_URL', '');
+define('ROOT_URL', 'http://localhost/Solvencia/');
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', '');
-define('DB_NAME','koha_catolica');
+define('DB_NAME', 'koha_catolica');

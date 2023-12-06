@@ -5,6 +5,6 @@ require 'config/constants.php';
 
 $mysqli = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
-if(mysqli_errno($mysqli)) {
+if (mysqli_errno($mysqli)) {
     die(mysqli_errno($mysqli));
 }

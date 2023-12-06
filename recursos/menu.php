@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +12,12 @@
         }
 
         .menu {
-            background-color: #1E1E1E; /* Fondo gris oscuro */
+            background-color: #1E1E1E;
+            /* Fondo gris oscuro */
             overflow: hidden;
             text-align: center;
-            padding: 10px; /* Añadido para espaciado */
+            padding: 10px;
+            /* Añadido para espaciado */
         }
 
         .logo-container {
@@ -38,7 +41,8 @@
             font-weight: bold;
             padding: 10px;
             border-radius: 0 0 15px 0;
-            background-color: #1E1E1E; /* Fondo gris oscuro */
+            background-color: #1E1E1E;
+            /* Fondo gris oscuro */
             float: left;
         }
 
@@ -51,7 +55,8 @@
             font-size: 16px;
             border-radius: 20px;
             margin: 5px;
-            background-color: #9D2720; /* Fondo rojo oscuro */
+            background-color: #9D2720;
+            /* Fondo rojo oscuro */
             font-weight: bold;
         }
 
@@ -71,10 +76,12 @@
 
         .custom-center {
             text-align: center;
-            margin-top: 70px; /* Ajusta según sea necesario para evitar superposición con el menú */
+            margin-top: 70px;
+            /* Ajusta según sea necesario para evitar superposición con el menú */
         }
     </style>
 </head>
+
 <body>
 
     <div class="menu">
@@ -89,4 +96,5 @@
     </div>
 
 </body>
+
 </html>

@@ -1,5 +1,7 @@
 <?php
 include('config/database.php');
+
+header("Content-Type: text/html;charset=utf-8_spanish_ci");
 ?>
 
 <!DOCTYPE html>
@@ -262,7 +264,6 @@ include('config/database.php');
         <h2 style="text-align: center;">Estadisticas de las solvencias solicitadas</h2>
 
         <?php
-        header("Content-Type: text/html;charset=utf-8_spanish_ci");
 
         $date1 = $_POST['dateinicio'];
         $date2 = $_POST['datefin'];
