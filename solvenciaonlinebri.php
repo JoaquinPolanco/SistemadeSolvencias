@@ -240,7 +240,7 @@
       </div>
       <div class="col-md-4">
         <br>
-        <h5><a href="http://www.catalogo.catolica.edu.sv/cgi-bin/koha/Solvencia/versolvenciasbri.php">Biblioteca Regional Ilobasco</a>/Solvencia</h5>
+        <h5><a href="versolvenciasbri.php">Biblioteca Regional Ilobasco</a>/Solvencia</h5>
       </div>
     </div>
   </div>

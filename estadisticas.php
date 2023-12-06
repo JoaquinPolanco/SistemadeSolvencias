@@ -20,7 +20,7 @@ include('partials/header.php');
             <h3 class="panel-title">Consulta un período de tiempo</h3>
           </div>
           <div class="panel-body">
-            <form class="form-signin" method="POST" action="http://www.catalogo.catolica.edu.sv/cgi-bin/koha/Solvencia/verestadisticas.php">
+            <form class="form-signin" method="POST" action="verestadisticas.php">
               <span id="reauth-email" class="reauth-email"></span>
               <p>Desde: <input type="date" name="dateinicio"></p>
               <br>

@@ -240,7 +240,7 @@
       </div>
       <div class="col-md-4">
         <br>
-        <h5><a href="http://www.catalogo.catolica.edu.sv/cgi-bin/koha/Solvencia/versolvencias.php">Home</a>/Solvencia</h5>
+        <h5><a href="versolvencias.php">Home</a>/Solvencia</h5>
       </div>
     </div>
   </div>

@@ -34,7 +34,7 @@ include('config/database.php');
     }
   </script>
   <!--
-http://www.catalogo.catolica.edu.sv/cgi-bin/koha/Solvencia/
+
 /OPAC/Solvencia/
 -->
 

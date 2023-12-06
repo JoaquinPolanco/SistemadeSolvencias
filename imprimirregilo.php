@@ -30,7 +30,7 @@
     }
   </script>
   <!--
-http://www.catalogo.catolica.edu.sv/cgi-bin/koha/Solvencia/
+
 /OPAC/Solvencia/
 -->
   <script src="js/bibliotecas.js"></script>

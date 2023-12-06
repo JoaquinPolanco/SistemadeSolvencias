@@ -34,5 +34,5 @@ if ($resultado >= 1) {
   if ($result >= 1) {
     echo "algo salio mal x2";
   }
-  echo "<script language='javascript'>window.location='http://www.catalogo.catolica.edu.sv/cgi-bin/koha/Solvencia/solvenciacorreo.php'</script>;";
+  echo "<script language='javascript'>window.location='solvenciacorreo.php'</script>;";
 }

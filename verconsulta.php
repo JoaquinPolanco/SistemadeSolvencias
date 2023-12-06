@@ -240,7 +240,7 @@
       </div>
       <div class="col-md-4">
         <br>
-        <h5><a href="http://www.catalogo.catolica.edu.sv/cgi-bin/koha/Solvencia/versolvencias.php">Home</a>/Solvencia</h5>
+        <h5><a href="versolvencias.php">Home</a>/Solvencia</h5>
       </div>
     </div>
   </div>
@@ -250,7 +250,7 @@
     <div class="row">
       <div class="col-md-1"><!-- seccion izquierda -->
         <br>
-        <a href="http://www.catalogo.catolica.edu.sv/cgi-bin/koha/Solvencia/estadisticas.php"><button type="button" class="btn btn-info">Regresar</button></a>
+        <a href="estadisticas.php"><button type="button" class="btn btn-info">Regresar</button></a>
       </div>
 
       <div class="col-md-10"><!-- seccion centro -->

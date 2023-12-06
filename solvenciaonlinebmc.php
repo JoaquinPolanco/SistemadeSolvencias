@@ -244,7 +244,7 @@ include('config/database.php');
       </div>
       <div class="col-md-4">
         <br>
-        <h5><a href="http://www.catalogo.catolica.edu.sv/cgi-bin/koha/Solvencia/versolvenciasbmc.php">Biblioteca Miguel de Cervantes</a>/Solvencia</h5>
+        <h5><a href="versolvenciasbmc.php">Biblioteca Miguel de Cervantes</a>/Solvencia</h5>
       </div>
     </div>
   </div>
