@@ -64,7 +64,7 @@ include('config/database.php');
         echo "<h4><li>La solvencia tiene 1 mes de vigencia. Si no la usas en el periodo de tiempo sugerido pierde su validez y deber&aacute;s tramitarla nuevamente.</li></h4>";
         ?>
         <br>
-        <a href="inicio.php" class="custom-button ">Regresar a inicio</a>
+        <a href="index.php" class="custom-button ">Regresar a inicio</a>
 
       </div>
     </div>

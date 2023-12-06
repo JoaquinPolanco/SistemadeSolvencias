@@ -57,7 +57,7 @@ include('config/database.php');
         ?>
 
         <br>
-        <a href="inicio.php" class="custom-button ">Regresar a inicio</a>
+        <a href="index.php" class="custom-button ">Regresar a inicio</a>
 
       </div>
 

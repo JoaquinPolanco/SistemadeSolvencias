@@ -245,8 +245,8 @@
         <p>Si el número ingresado es incorrecto, regresa a la pagina de inicio y digita tu número de carnet nuevamente de forma correcta.</p>
         <br>
 
-        <form style="text-align: center;" class="form-signin col-md-4" method="POST" action="inicio.php">
-          <input type="submit" name="submit" value="Regresar a inicio" class="btn btn-default" href="inicio.php" role="button">
+        <form style="text-align: center;" class="form-signin col-md-4" method="POST" action="index.php">
+          <input type="submit" name="submit" value="Regresar a inicio" class="btn btn-default" href="index.php" role="button">
         </form>
         <!--<?php $carnet = $_GET['var1'];
             echo "hola $carnet"; ?>-->

@@ -146,8 +146,8 @@ include('config/database.php');
 
         ?>
         <p>En caso de que hayas ingresado un n&uacute;mero de carnet equivocado, haz click en el bot&oacute;n <b>Regresar a inicio</b> y digita tus datos nuevamente.</p>
-        <form class="form-signin col-md-12 text-center" method="POST" action="inicio.php">
-          <input type="submit" name="submit" value="Regresar a inicio" class="custom-button" href="inicio.php" role="button">
+        <form class="form-signin col-md-12 text-center" method="POST" action="index.php">
+          <input type="submit" name="submit" value="Regresar a inicio" class="custom-button" href="index.php" role="button">
         </form>
         <br>
         <br>

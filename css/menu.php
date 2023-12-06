@@ -87,9 +87,9 @@
     <div class="menu">
         <div class="logo-container">
             <!-- Puedes reemplazar la ruta del logo con la ruta de tu propio logo -->
-            <a href="inicio.php" class="logo-link"><img src="firmas/logo-unicaes-hd.png" alt="Logo" class="logo"></a>
+            <a href="index.php" class="logo-link"><img src="firmas/logo-unicaes-hd.png" alt="Logo" class="logo"></a>
         </div>
-        <a href="inicio.php" class="custom-button">Inicio</a>
+        <a href="index.php" class="custom-button">Inicio</a>
         <a href="versolvenciasbmc.php" class="custom-button">Solvencias Santa Ana</a>
         <a href="#" class="custom-button">Acerca de</a>
         <a href="estadisticas.php" class="custom-button">Estadisticas</a>
