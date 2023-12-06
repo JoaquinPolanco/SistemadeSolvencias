@@ -7,6 +7,8 @@
     <title>Biblioteca Digital Miguel de Cervantes</title>
     <link href="<?= ROOT_URL ?>/firmas/logo-unicaes-hd.png" type="image/png" rel="icon">
     <link rel="stylesheet" href="<?= ROOT_URL ?>/css/style.css">
+    <link rel="stylesheet" href="css/tablas.css">
+    <link rel="stylesheet" href="<?php echo 'css/botones.css'; ?>">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8_spanish_ci" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </head>

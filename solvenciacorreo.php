@@ -19,15 +19,15 @@ include('config/database.php');
 
   <link rel="icon" href="firmas/logo-unicaes-hd.png" type="image/png">
   <title>Solvencias Biblioteca</title>
-  <?php include 'recursos/menu.php'; ?>
+  <?php include 'css/menu.php'; ?>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </head>
 
 <body style="background-color: #fff;">
-  <link rel="stylesheet" href="<?php echo 'recursos/menu.php'; ?>">
-  <link rel="stylesheet" href="<?php echo 'recursos/botones.css'; ?>">
-  <link rel="stylesheet" href="recursos/tablas.css">
+  <link rel="stylesheet" href="<?php echo 'css/menu.php'; ?>">
+  <link rel="stylesheet" href="<?php echo 'css/botones.css'; ?>">
+  <link rel="stylesheet" href="css/tablas.css">
 
   </head>
 
