@@ -8,7 +8,7 @@ include('partials/header.php');
   <div class="container text-center">
     <div class="row">
       <div class="col-md-8"><!-- seccion izquierda -->
-        <h1><img src="firmas/logo-unicaes-hd.png" alt="Logo" style="max-width: 100px; height: auto;"> Biblioteca Miguel de Cervantes </h1>
+        <h1><img src="images/logo-unicaes-hd.png" alt="Logo" style="max-width: 100px; height: auto;"> Biblioteca Miguel de Cervantes </h1>
         <h2 class="text-center">¿Tu información es correcta?</h2>
 
         <h4>

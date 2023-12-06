@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca Digital Miguel de Cervantes</title>
-    <link href="<?= ROOT_URL ?>/firmas/logo-unicaes-hd.png" type="image/png" rel="icon">
+    <link href="<?= ROOT_URL ?>/images/logo-unicaes-hd.png" type="image/png" rel="icon">
     <link rel="stylesheet" href="<?= ROOT_URL ?>/css/style.css">
     <link rel="stylesheet" href="css/tablas.css">
     <link rel="stylesheet" href="<?php echo 'css/botones.css'; ?>">

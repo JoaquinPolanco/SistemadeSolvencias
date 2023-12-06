@@ -8,7 +8,7 @@ include('config/database.php');
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8_spanish_ci" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="firmas/logo-unicaes-hd.png" type="image/png">
+  <link rel="icon" href="images/logo-unicaes-hd.png" type="image/png">
   <title>Solvencias Biblioteca</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="<?php echo 'css/botones.css'; ?>">
@@ -19,7 +19,7 @@ include('config/database.php');
     <div class="row">
       <div class="col-md-12">
         <br>
-        <h1><img src="firmas/logo-unicaes-hd.png" alt="Logo" style="max-width: 100px; height: auto;"> Biblioteca Miguel de Cervantes </h1>
+        <h1><img src="images/logo-unicaes-hd.png" alt="Logo" style="max-width: 100px; height: auto;"> Biblioteca Miguel de Cervantes </h1>
         <h2>Solvencia para graduaci&oacute;n solicitada!</h2>
         <br>
 

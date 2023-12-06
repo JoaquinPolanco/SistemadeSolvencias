@@ -10,7 +10,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="http://lipis.github.io/bootstrap-social/" />
   <meta property="og:image" content="http://lipis.github.io/bootstrap-social/assets/img/bootstrap-social.png" />
-  <link rel="icon" href="firmas/logo-unicaes-hd.png" type="image/png">
+  <link rel="icon" href="images/logo-unicaes-hd.png" type="image/png">
   <title>Solvencias Biblioteca</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="<?php echo 'css/card.css'; ?>">
@@ -21,7 +21,7 @@
   <div class="container text-center">
     <div class="row">
       <div class="col-md-12">
-        <h1><img src="firmas/logo-unicaes-hd.png" alt="Logo" style="max-width: 100px; height: auto;"> Biblioteca Miguel de Cervantes </h1>
+        <h1><img src="images/logo-unicaes-hd.png" alt="Logo" style="max-width: 100px; height: auto;"> Biblioteca Miguel de Cervantes </h1>
         <h2>¿Necesitas una solvencia?</h2>
         <h4>La solvencia de biblioteca es un documento oficial, que hace constar que el estudiante no tiene libros pendientes de entregar, sanciones por entregas tardías o cualquier otro asunto con la Biblioteca.</h4>
         <h4>Si deseas solicitar tu solvencia, necesitas llenar el siguiente formulario:</h4>

@@ -15,7 +15,7 @@ include('config/database.php');
   <meta property="og:image" content="http://lipis.github.io/bootstrap-social/assets/img/bootstrap-social.png" />
 
 
-  <link rel="icon" href="firmas/logo-unicaes-hd.png" type="image/png">
+  <link rel="icon" href="images/logo-unicaes-hd.png" type="image/png">
   <title>Solvencias Biblioteca</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -27,7 +27,7 @@ include('config/database.php');
     <div class="row">
       <div class="col-md-12">
         <br>
-        <h1><img src="firmas/logo-unicaes-hd.png" alt="Logo" style="max-width: 100px; height: auto;"> Biblioteca Miguel de Cervantes </h1>
+        <h1><img src="images/logo-unicaes-hd.png" alt="Logo" style="max-width: 100px; height: auto;"> Biblioteca Miguel de Cervantes </h1>
         <h2>Solvencia solicitada!</h2>
         <br>
 

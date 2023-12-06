@@ -17,7 +17,7 @@ include('config/database.php');
   <meta property="og:url" content="http://lipis.github.io/bootstrap-social/" />
   <meta property="og:image" content="http://lipis.github.io/bootstrap-social/assets/img/bootstrap-social.png" />
 
-  <link rel="icon" href="firmas/logo-unicaes-hd.png" type="image/png">
+  <link rel="icon" href="images/logo-unicaes-hd.png" type="image/png">
   <title>Solvencias Biblioteca</title>
   <?php include 'css/menu.php'; ?>
 
