@@ -91,10 +91,10 @@ include('config/database.php');
             }
 
             // Generar formularios para cada tipo y estado
-            generateForm('solicitadagra.php', 'GRADUACIÓN', 'Graduación', 'insolvente');
-            generateForm('solicitadarei.php', 'REINGRESO', 'Reingreso', 'insolvente');
-            generateForm('solicitadaret.php', 'RETIRO', 'Retiro', 'insolvente');
-            generateForm('solicitada.php', 'OTROS', 'Otros motivos', 'insolvente');
+            generateForm('solicitada_graduacion.php', 'GRADUACIÓN', 'Graduación', 'insolvente');
+            generateForm('solicitada_reingreso.php', 'REINGRESO', 'Reingreso', 'insolvente');
+            generateForm('solicitada_retiro.php', 'RETIRO', 'Retiro', 'insolvente');
+            generateForm('solicitada_otros.php', 'OTROS', 'Otros motivos', 'insolvente');
 
             echo "<br>";
           }

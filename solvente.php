@@ -81,10 +81,10 @@ include('partials/header.php');
             }
 
             // Generar formularios para cada tipo
-            generateForm('solicitadagra.php', 'GRADUACIÓN', 'Graduación');
-            generateForm('solicitadarei.php', 'REINGRESO', 'Reingreso');
-            generateForm('solicitadaret.php', 'RETIRO', 'Retiro');
-            generateForm('solicitada.php', 'OTROS', 'Otros motivos');
+            generateForm('solicitada_graduacion.php', 'GRADUACIÓN', 'Graduación');
+            generateForm('solicitada_reingreso.php', 'REINGRESO', 'Reingreso');
+            generateForm('solicitada_retiro.php', 'RETIRO', 'Retiro');
+            generateForm('solicitada_otros.php', 'OTROS', 'Otros motivos');
 
             echo "<br>";
           }
