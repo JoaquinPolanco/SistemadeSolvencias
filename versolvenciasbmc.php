@@ -5,6 +5,7 @@ YA QUE LA EL BOTON ONLINE YA NO EXISTE.
 <?php
 include('config/database.php');
 include('partials/header.php');
+include('partials/menu.php')
 ?>
 
 <body>

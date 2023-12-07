@@ -1,22 +1,11 @@
 <?php
 include('config/database.php');
 include('partials/header.php');
+include('partials/menu.php');
+
 ?>
 
 <body style="background-color: #fff;">
-  <!-- Start top -->
-  <div class="container">
-    <div class="topsolvencia">
-      <div class="col-md-8">
-        <h1>Solvencia de Biblioteca</h1>
-      </div>
-      <div class="col-md-4">
-        <br>
-        <h5><a href="versolvencias.php">Home</a>/Solvencia</h5>
-      </div>
-    </div>
-  </div>
-  <!-- end top -->
 
   <div class="container">
     <div class="row">
