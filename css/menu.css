@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Página</title>
-    <style>
+        
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -79,22 +72,3 @@
             margin-top: 70px;
             /* Ajusta según sea necesario para evitar superposición con el menú */
         }
-    </style>
-</head>
-
-<body>
-
-    <div class="menu">
-        <div class="logo-container">
-            <!-- Puedes reemplazar la ruta del logo con la ruta de tu propio logo -->
-            <a href="index.php" class="logo-link"><img src="images/logo-unicaes-hd.png" alt="Logo" class="logo"></a>
-        </div>
-        <a href="index.php" class="custom-button">Inicio</a>
-        <a href="versolvenciasbmc.php" class="custom-button">Solvencias Santa Ana</a>
-        <a href="#" class="custom-button">Acerca de</a>
-        <a href="estadisticas.php" class="custom-button">Estadisticas</a>
-    </div>
-
-</body>
-
-</html>
