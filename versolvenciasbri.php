@@ -1,3 +1,5 @@
+ESTA PANTALLA SE TIENE QUE ELIMINAR
+
 <?php
 include('config/database.php');
 include('partials/header.php');
@@ -34,7 +36,7 @@ include('partials/header.php');
           <p>Muestra el listado de alumnos que solicitado la solvencia en línea para que se le imprima en Registro Académico.</p>
         </div>
         <div class="col-sm-4 col-md-4">
-          <a href="solvenciacorreobri.php"><button type="button" class="btn btn-success btn-lg btn-block">Solvencias por Correo</button></a>
+          <a href="solvencias_ilobasco.php"><button type="button" class="btn btn-success btn-lg btn-block">Solvencias por Correo</button></a>
           <br>
           <p>Muestra el listado de alumnos que solicitado la solvencia en línea y pidieron recibirla por correo para imprimirla ellos mismos.</p>
         </div>

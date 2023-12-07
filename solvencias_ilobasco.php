@@ -31,7 +31,7 @@ include('partials/header.php');
         <h2 style="text-align: center;">Solvencias solicitadas Ilobasco</h2>
         <br>
         <p>Buscar por Carnet, Nombre, Apellido o Carrera:</p>
-        <form class="form-signin  col-md-10" method="POST" action="solvenciacorreobri.php">
+        <form class="form-signin  col-md-10" method="POST" action="solvencias_ilobasco.php">
           <div class="col-md-4">
             <input type="text" name="buscar" class="form-control" placeholder="busqueda...">
           </div>

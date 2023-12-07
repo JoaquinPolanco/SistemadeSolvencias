@@ -1,3 +1,6 @@
+
+ESTA PANTALLA SE TIENE QUE ELIMINAR Y PONER EL HREF DEL KOHA APUNTANDO A SOLVENCIAS BMC O ILOBASCO
+
 <?php
 include('config/database.php');
 include('partials/header.php');
@@ -34,7 +37,7 @@ include('partials/header.php');
           <p>Muestra el listado de alumnos que solicitado la solvencia en línea para que se le imprima en Registro Académico.</p>
         </div>
         <div class="col-sm-4 col-md-4">
-          <a href="solvenciacorreo.php"><button type="button" class="btn btn-success btn-lg btn-block">Solvencias por Correo</button></a>
+          <a href="solvencias_cervantes.php"><button type="button" class="btn btn-success btn-lg btn-block">Solvencias por Correo</button></a>
           <br>
           <p>Muestra el listado de alumnos que solicitado la solvencia en linea y pidieron recibirla por correo para imprimirla ellos mismos.</p>
         </div>

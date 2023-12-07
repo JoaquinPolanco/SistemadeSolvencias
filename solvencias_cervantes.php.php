@@ -9,7 +9,7 @@ include('partials/header.php');
     <h1 style="text-align: center;">Solvencias solicitadas Santa Ana</h1>
     <br>
     <p>Buscar por Carnet, Nombre, Apellido o Carrera:</p>
-    <form class="form-signin  col-md-10" method="POST" action="solvenciacorreo.php">
+    <form class="form-signin  col-md-10" method="POST" action="solvencias_cervantes.php">
       <div class="col-md-4">
         <input type="text" name="buscar" class="form-control" placeholder="busqueda...">
       </div>
