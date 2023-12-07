@@ -1,21 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+include('config/database.php');
+include('partials/header.php');
+?>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="Social Buttons for Bootstrap" />
-  <meta property="og:description" content="Social Sign-In Buttons made in pure CSS based on Bootstrap and Font Awesome!" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://lipis.github.io/bootstrap-social/" />
-  <meta property="og:image" content="http://lipis.github.io/bootstrap-social/assets/img/bootstrap-social.png" />
-  <link rel="icon" href="images/logo-unicaes-hd.png" type="image/png">
-  <title>Solvencias Biblioteca</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="<?php echo 'css/card.css'; ?>">
-  <link rel="stylesheet" href="<?php echo 'css/botones.css'; ?>">
-</head>
 
 <body style="background-color: #fff; ">
   <div class="container text-center">
