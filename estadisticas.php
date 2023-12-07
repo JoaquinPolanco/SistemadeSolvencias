@@ -20,7 +20,7 @@ include('partials/header.php');
             <h3 class="panel-title">Consulta un período de tiempo</h3>
           </div>
           <div class="panel-body">
-            <form class="form-signin" method="POST" action="verestadisticas.php">
+            <form class="form-signin" method="POST" action="estadisticas_rango.php">
               <span id="reauth-email" class="reauth-email"></span>
               <p>Desde: <input type="date" name="dateinicio"></p>
               <br>
@@ -40,7 +40,7 @@ include('partials/header.php');
             <h3 class="panel-title">Consulta rápida por año</h3>
           </div>
           <div class="panel-body">
-            <form class="form-signin" method="POST" action="estadisticaanual.php">
+            <form class="form-signin" method="POST" action="estadisticas_anual.php">
               <span id="reauth-email" class="reauth-email"></span>
               <p>Año a consultar:</p><br>
               <input type="text" name="year" maxlength="4">
@@ -59,7 +59,7 @@ include('partials/header.php');
             <h3 class="panel-title">¿Quiénes han solicitado?</h3>
           </div>
           <div class="panel-body">
-            <form class="form-signin" method="POST" action="verconsulta.php">
+            <form class="form-signin" method="POST" action="estadisticas_individual.php">
               <span id="reauth-email" class="reauth-email"></span>
               <p>Búsqueda por nombre, apellidos o carnet:</p>
               <input type="text" name="buscar">
