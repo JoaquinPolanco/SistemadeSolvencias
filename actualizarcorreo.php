@@ -1,5 +1,6 @@
 <?php
 include('config/database.php');
+
 $codsolicitadas = $_GET['var'];
 
 /*
