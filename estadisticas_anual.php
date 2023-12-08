@@ -19,7 +19,6 @@ include('partials/menu.php');
         <h2 style="text-align: center;">Estadisticas de las solvencias solicitadas</h2>
 
         <?php
-        header("Content-Type: text/html;charset=utf-8_spanish_ci");
 
         $year = $_POST['year'];
 

@@ -1,6 +1,7 @@
 <?php
 include('config/database.php');
 include('partials/header.php');
+include('partials/menu.php');
 ?>
 
 

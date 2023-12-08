@@ -47,7 +47,7 @@ if ($resultado = $mysqli->query($consulta)) {
         echo "<p class='western' lang='es-SV' align='left'><span style='font-family: 'Century Schoolbook L', serif;'><span style='font-size: large;'><strong>UNIVERSIDAD CAT&Oacute;LICA DE EL SALVADOR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></span></span></p>";
         echo "<p class='western' lang='es-SV' align='left'><span style='font-family: 'Century Schoolbook L', serif;'><span style='font-size: large;'><strong>Biblioteca Miguel de Cervantes</strong></span></span></p>";
         echo "</td>";
-        echo "<td><img src='http://www.catolica.edu.sv/wp-content/uploads/2017/04/logo-UNICAES-png.png' width='125px' height='135px'></td>";
+        echo "<td><img src='http://www.catolica.edu.sv/wp-content/uploads/2017/04/logo-UNICAES-hd.png' width='125px' height='135px'></td>";
         echo "</tr>";
         echo "</tbody>";
         echo "</table>";
