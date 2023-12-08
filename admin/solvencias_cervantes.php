@@ -1,7 +1,10 @@
+<!-- ESTA PANTALLA SE TIENE QUE ELIMINAR Y PONER EL HREF DEL KOHA APUNTANDO A SOLVENCIAS BMC O ILOBASCO
+YA QUE LA EL BOTON ONLINE YA NO EXISTE. -->
+
 <?php
 include('config/database.php');
 include('partials/header.php');
-include('partials/menu.php');
+include('partials/menu.php')
 ?>
 
 <div class="container">
