@@ -7,19 +7,6 @@ include('partials/header.php');
 <script src="<?= ROOT_URL ?>js/imprimir.js"></script>
 
 <body style="background-color: #fff;">
-  <!-- Start top -->
-  <div class="container">
-    <div class="topsolvencia">
-      <div class="col-md-8">
-        <h1>Solvencia de Biblioteca</h1>
-      </div>
-      <div class="col-md-4">
-        <br>
-        <h5><a href="#">Home</a>/Solvencia</h5>
-      </div>
-    </div>
-  </div>
-  <!-- end top -->
 
   <div class="container">
     <div class="row">
