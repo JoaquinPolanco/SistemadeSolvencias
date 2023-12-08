@@ -15,7 +15,7 @@ include('partials/menu.php')
     <p>Buscar por Carnet, Nombre, Apellido o Carrera:</p>
     <form class="form-signin  col-md-10" method="POST" action="solvencias_cervantes.php">
       <div class="col-md-4">
-        <input type="text" name="buscar" class="form-control" placeholder="busqueda...">
+        <input type="text" name="buscar" class="form-control" placeholder="Buscar">
       </div>
       <div class="col-md-2">
         <input type="submit" name="submit" value="Buscar" class="btn btn-success" role="button">
