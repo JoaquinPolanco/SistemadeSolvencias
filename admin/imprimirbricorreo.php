@@ -124,7 +124,7 @@ include('partials/header.php');
             echo "</tr>";
             echo "<td>";
             echo "<br><br><br><br>";
-            echo "<p align='center'><img id='firma' src='' width='125px' height='135px'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img id='sello' src='' width='125px' height='135px'></p>";
+            echo "<p align='center'><img src='../images/FirmaRolando.png' width='125px' height='135px'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src='../images/SelloBRI.png' width='125px' height='135px'></p>";
             echo "</td>";
             echo "<tr>";
             echo "<td>";
