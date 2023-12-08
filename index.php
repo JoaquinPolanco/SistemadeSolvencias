@@ -17,7 +17,7 @@ include('partials/header.php');
       </div>
     </div>
     <div class="row text-center">
-      <form class="form-signin col-md-12 mx-auto" method="POST" action="ingreso.php">
+      <form class="form-signin col-md-12 mx-auto" method="POST" action="enviar.php">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-md-12 mx-auto">
