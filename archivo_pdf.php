@@ -1,7 +1,4 @@
 <?php
-
-header("Content-Type: text/html;charset=utf-8_spanish_ci");
-
 include('config/database.php');
 
 $codsolicitadas =  $_GET['var'];
