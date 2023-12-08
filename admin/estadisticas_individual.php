@@ -45,7 +45,6 @@ include('partials/menu.php');
           echo "<th>Carrera</th>";
           echo "<th>Fecha</th>";
           echo "<th>Motivo</th>";
-          echo "<th></th>";
           echo "</tr>";
           echo "</thead>";
           /* obtener el array de objetos */
@@ -58,8 +57,6 @@ include('partials/menu.php');
             echo "<td>$fila[3]</td>"; //carera
             echo "<td>$fila[4]</td>"; //fecha
             echo "<td>$fila[5]</td>"; //motivo
-            echo "<td><a href='imprimir.php?var=$fila[6]'><button type='button' class='btn btn-link'>Imprimir</button></a></td>"; //autor
-
             echo "</tr>";
             echo "</tr> ";
           }
