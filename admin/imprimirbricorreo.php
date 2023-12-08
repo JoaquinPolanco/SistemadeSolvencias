@@ -75,7 +75,7 @@ include('partials/header.php');
             echo "<p class='western' lang='es-SV' align='left'><span style='font-family: 'Century Schoolbook L', serif;'><span style='font-size: large;'><strong>UNIVERSIDAD CAT&Oacute;LICA DE EL SALVADOR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></span></span></p>";
             echo "<p class='western' lang='es-SV' align='left'><span style='font-family: 'Century Schoolbook L', serif;'><span style='font-size: large;'><strong id='sede'>[Sede]</strong></span></span></p>";
             echo "</td>";
-            echo "<td><img src='images/logo-UNICAES-hd.png' width='125px' height='130px'></td>";
+            echo "<td><img src='../images/logo-UNICAES-hd.png' width='125px' height='130px'></td>";
             echo "</tr>";
             echo "</tbody>";
             echo "</table>";
@@ -119,7 +119,7 @@ include('partials/header.php');
             echo "</tr>";
             echo "<tr>";
             echo "<td>";
-            echo "<p class='western' lang='es-SV' align='justify'><span style='font-family: 'Century Schoolbook L', serif;'><span style='font-size: large;'>Santa Ana, $fecha.</span></span></p>";
+            echo "<p class='western' lang='es-SV' align='justify'><span style='font-family: 'Century Schoolbook L', serif;'><span style='font-size: large;'>Ilobasco, $fecha.</span></span></p>";
             echo "</td>";
             echo "</tr>";
             echo "<td>";
@@ -171,16 +171,12 @@ include('partials/header.php');
 --> <?php
     $codsolicitadas =  $_GET['var'];
     echo "<br>";
-    echo "<a href='actualizarcorreo.php?var=$codsolicitadas'><button type='button' class='btn btn-primary'>Guardar Solvencia</button></a>";
+    echo "<a href='actualizarbricorreo.php?var=$codsolicitadas'><button type='button' class='btn btn-primary'>Guardar Solvencia</button></a>";
 
     ?>
 
-      </div>
-    </div>
-
-
-    <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 
 </html>

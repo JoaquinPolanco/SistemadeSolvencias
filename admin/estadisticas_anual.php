@@ -11,7 +11,7 @@ include('partials/menu.php');
     <div class="row">
       <div class="col-md-1"><!-- seccion izquierda -->
         <br>
-        <a href="estadisticas.php"><button type="button" class="btn btn-info">Regresar</button></a>
+        <a href="admin/estadisticas.php"><button type="button" class="btn btn-info">Regresar</button></a>
       </div>
 
       <div class="col-md-10"><!-- seccion centro -->

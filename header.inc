@@ -3,8 +3,8 @@
  <ul id="toplevelmenu" class="nav">
  [% IF ( CAN_user_circulate ) %]<li><a href="/cgi-bin/koha/circ/circulation-home.pl">Circulación</a></li>[% END %] [% IF ( CAN_user_borrowers ) %]<li><a href="/cgi-bin/koha/members/members-home.pl">Usuarios</a></li>[% END %] [% IF ( CAN_user_catalogue ) %]<li><a href="/cgi-bin/koha/catalogue/search.pl">Buscar</a></li>[% END %] [% IF ( intranetbookbag ) %] <li><a href="#" id="cartmenulink">Cesta<span id="basketcount"></span></a></li>
  [% END %] [% IntranetNav %]
-<li><a href="versolvenciasbmc.php" target="_blank">SolvenciasBMC</a></li>
-<li><a href="versolvenciasbri.php" target="_blank">SolvenciasBRI</a></li>
+<li><a href="admin/versolvenciasbmc.php" target="_blank">SolvenciasBMC</a></li>
+<li><a href="admin/versolvenciasbri.php" target="_blank">SolvenciasBRI</a></li>
  <li class="dropdown">
  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Más<b class="caret"></b></a>
  <ul class="dropdown-menu">
