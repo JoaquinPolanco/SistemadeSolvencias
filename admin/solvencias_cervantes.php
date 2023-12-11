@@ -9,18 +9,25 @@ include('partials/menu.php')
     <br>
     <h2 class="text-center">SOLVENCIAS SOLICITADAS EN SANTA ANA</h2>
     <br>
-    <div class="row justify-content-left">
-      <div class="col-md-8">
-        <form class="row g-2" method="POST" action="solvencias_cervantes.php">
-          <div class="col-md-6">
-            <input type="text" name="buscar" class="form-control" placeholder="Carnet, Nombre, Apellido o Carrera">
+
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+
+        <div class="row justify-content-left">
+          <div class="col-md-200">
+            <form class="row g-2" method="POST" action="solvencias_cervantes.php">
+              <div class="col-md-10">
+                <input type="text" name="buscar" class="form-control" placeholder="Carnet, Nombre o Carrera">
+              </div>
+              <div class="col-md-1">
+                <button type="submit" name="submit" class="btn btn-outline-success">Buscar</button>
+              </div>
+            </form>
           </div>
-          <div class="col-md-1">
-            <button type="submit" name="submit" class="btn btn-success">Buscar</button>
-          </div>
-        </form>
+        </div>
       </div>
-    </div>
+    </nav>
+
 
     <?php
 
@@ -74,7 +81,8 @@ include('partials/menu.php')
         echo "<td class='border-bottom'>$fila[5]</td>"; //motivo
         echo "<td class='border-bottom'>$fila[7]</td>"; //estado
         echo "<td class='border-bottom'>$fila[8]</td>"; //email
-        echo "<td class='border-bottom'><a href='imprimir_cervantes.php?var=$fila[6]'><button type='button' class='custom-button'>Imprimir</button></a></td>"; //autor
+        echo "<td class='border-bottom'><a href='imprimir_cervantes.php?var=$fila[6]'><button type='button' class='btn btn-dark'>Imprimir</button></a></td>";
+
         echo "</tr>";
         echo "</tbody>";
       }
@@ -95,7 +103,6 @@ include('partials/menu.php')
   </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
 </body>
 
 </html>

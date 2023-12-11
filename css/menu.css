@@ -1,74 +1,64 @@
-        
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
 
-        .menu {
-            background-color: #1E1E1E;
-            /* Fondo gris oscuro */
-            overflow: hidden;
-            text-align: center;
-            padding: 10px;
-            /* Añadido para espaciado */
-        }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
-        .logo-container {
-            display: inline-block;
-            margin-right: 10px;
-            vertical-align: middle;
-            float: left;
-        }
+.menu {
+    background-color: #1E1E1E;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+}
 
-        .logo {
-            /* Ajusta el tamaño del logo según tus necesidades */
-            height: 60px;
-            background-color: transparent;
-        }
+.logo-container {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+    float: left;
+}
 
-        .menu::after {
-            content: 'Biblioteca Miguel de Cervantes';
-            display: inline-block;
-            color: #F6C03D;
-            font-size: 18px;
-            font-weight: bold;
-            padding: 10px;
-            border-radius: 0 0 15px 0;
-            background-color: #1E1E1E;
-            /* Fondo gris oscuro */
-            float: left;
-        }
+.logo {
+    height: 60px;
+    background-color: transparent;
+}
 
-        .menu a {
-            display: inline-block;
-            color: #F6C03D;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 16px;
-            border-radius: 20px;
-            margin: 5px;
-            background-color: #9D2720;
-            /* Fondo rojo oscuro */
-            font-weight: bold;
-        }
+.menu::after {
+    content: 'Biblioteca Miguel de Cervantes';
+    display: inline-block;
+    color: #F6C03D;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 0 0 15px 0;
+    background-color: #1E1E1E;
+    float: left;
+}
 
-        .menu a:hover {
-            background-color: #F6C03D;
-            color: #9D2720;
-            transition: 0.3s;
-        }
+.menu a {
+    display: inline-block;
+    color: #F6C03D;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 20px;
+    margin: 5px;
+    background-color: #9D2720;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
 
-        .menu a.logo-link {
-            /* Estilo específico para el enlace que contiene el logo */
-            background-color: transparent;
-            border: none;
-            padding: 0;
-            margin: 0;
-        }
+.menu a:hover {
+    background-color: #F6C03D;
+    color: #9D2720;
+}
 
-        .custom-center {
-            text-align: center;
-            margin-top: 70px;
-            /* Ajusta según sea necesario para evitar superposición con el menú */
-        }
+.menu a.logo-link {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+
