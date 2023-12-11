@@ -5,13 +5,12 @@ include('partials/menu.php')
 ?>
 
 <div class="container">
-  <div class="col-md-12 text-center"><!-- seccion centro -->
+  <div class="col-md-25 text-center"><!-- seccion centro -->
     <br>
     <h2 class="text-center">SOLVENCIAS SOLICITADAS EN SANTA ANA</h2>
     <br>
 
     <nav class="navbar bg-body-tertiary">
-      <div class="container-fluid">
 
         <div class="row justify-content-left">
           <div class="col-md-200">
@@ -20,7 +19,7 @@ include('partials/menu.php')
                 <input type="text" name="buscar" class="form-control" placeholder="Carnet, Nombre o Carrera">
               </div>
               <div class="col-md-1">
-                <button type="submit" name="submit" class="btn btn-outline-success">Buscar</button>
+                <button type="submit" name="submit" class="btn btn-dark">Buscar</button>
               </div>
             </form>
           </div>
@@ -97,6 +96,7 @@ include('partials/menu.php')
 
     /* cerrar la conexi&oacute;n */
     $mysqli->close();
+    
 
     ?>
 
