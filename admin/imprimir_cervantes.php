@@ -36,6 +36,7 @@ include('config/database.php');
 
   <div class="container">
     <div class="row">
+
       <div class="col-md-2"><!-- seccion izquierda -->
         <br>
         <input class='btn btn-primary no-imprimir' name="Restablecer" type="button" value="Regresar" onClick="history.back()">
@@ -44,6 +45,7 @@ include('config/database.php');
         <!-- Botón de impresión -->
         <button class='btn btn-success no-imprimir' onclick="imprimirSolvencia()">Imprimir</button>
       </div>
+      
       <div class="col-md-8"><!-- seccion centro -->
 
         <?php

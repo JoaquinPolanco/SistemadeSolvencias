@@ -4,81 +4,77 @@ include('partials/header.php');
 include('partials/menu.php');
 ?>
 
-<body style="background-color: #fff;">
+<body style="background-color: #222; color: #fff;">
 
   <div class="container">
-    <div class="row">
-      <div style="text-align: center;">
+    <div class="row justify-content-center">
+      <div class="col-md-12 text-center">
         <br>
-        <h2>¿Que necesitas saber sobre las solvencias?</h2>
+        <br>
+        <h3 style="font-size: 28px; color: #fff;">Estadísticas del Sistema de Solvencias</h3>
         <br>
         <p></p>
         <br>
+      </div>
+    </div>
 
-        <div class="panel panel-danger col-md-3" style="text-align: center;">
-          <br>
-          <div class="panel-heading">
-            <h3 class="panel-title">Consulta un período de tiempo</h3>
+    <div class="row justify-content-center">
+      
+      <div class="col-md-4">
+        <div class="card text-center bg-white text-dark">
+          <div class="card-header bg-dark text-white">
+            <h5 class="card-title">Estadísticas Anuales</h5>
           </div>
-          <div class="panel-body">
-            <form class="form-signin" method="POST" action="estadisticas_rango.php">
-              <span id="reauth-email" class="reauth-email"></span>
-              <p>Desde: <input type="date" name="dateinicio" required></p>
-              <br>
-              <p>Hasta: <input type="date" name="datefin" required></p>
-              <br>
-              <input type="submit" name="submit" value="Ver ahora" class="btn btn-default" role="button">
-              <br>
-            </form>
-          </div>
-        </div>
-
-        <div class="col-md-1"></div>
-
-        <div class="panel panel-primary col-md-3" style="text-align: center;">
-          <br>
-          <div class="panel-heading">
-            <h3 class="panel-title">Consulta rápida por año</h3>
-          </div>
-          <div class="panel-body">
+          <div class="card-body">
             <form class="form-signin" method="POST" action="estadisticas_anual.php">
-              <span id="reauth-email" class="reauth-email"></span>
-              <p>Año a consultar:</p><br>
-              <input type="text" name="year" maxlength="4" required>
-              <br><br>
-              <input type="submit" name="submit" value="Ver ahora" class="btn btn-default" role="button">
+              <p>Año a consultar:</p>
+              <input type="text" name="year" maxlength="4" class="form-control" placeholder="Ej: 2023" required>
+              <br>
+              <input type="submit" name="submit" value="Ver ahora" class="btn btn-dark" role="button">
               <br><br>
             </form>
           </div>
         </div>
+      </div>
 
-        <div class="col-md-1"></div>
-
-        <div class="panel panel-success col-md-3" style="text-align: center;">
-          <br>
-          <div class="panel-heading">
-            <h3 class="panel-title">¿Quiénes han solicitado?</h3>
+      <div class="col-md-4">
+        <div class="card text-center bg-white text-dark">
+          <div class="card-header bg-dark text-white">
+            <h5 class="card-title">Estadística en Rango de Tiempo</h5>
           </div>
-          <div class="panel-body">
+          <div class="card-body">
+            <form class="form-signin" method="POST" action="estadisticas_rango.php">
+              <p>Desde: <input type="date" name="dateinicio" class="form-control" required></p>
+
+              <p>Hasta: <input type="date" name="datefin" class="form-control" required></p>
+              <input type="submit" name="submit" value="Ver ahora" class="btn btn-dark" role="button">
+              <br>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+      <div class="card text-center bg-white text-dark">
+          <div class="card-header bg-dark text-white">
+            <h5 class="card-title">Búsqueda Específica</h5>
+          </div>
+          <div class="card-body">
             <form class="form-signin" method="POST" action="estadisticas_individual.php">
-              <span id="reauth-email" class="reauth-email"></span>
-              <p>Búsqueda por nombre, apellidos o carnet:</p>
-              <input type="text" name="buscar" required>
+              <p>Búsqueda por Nombre, Apellidos o Carnet:</p>
+              <input type="text" name="buscar" class="form-control" placeholder="Ej: MARTÍNEZ" required>
               <br>
-              <br>
-              <input type="submit" name="submit" value="Ver ahora" class="btn btn-default" role="button">
+              <input type="submit" name="submit" value="Ver ahora" class="btn btn-dark" role="button">
               <br><br>
             </form>
           </div>
         </div>
-
       </div>
     </div>
   </div>
 
-
-  <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
