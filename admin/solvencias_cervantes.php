@@ -1,6 +1,3 @@
-<!-- ESTA PANTALLA SE TIENE QUE ELIMINAR Y PONER EL HREF DEL KOHA APUNTANDO A SOLVENCIAS BMC O ILOBASCO
-YA QUE LA EL BOTON ONLINE YA NO EXISTE. -->
-
 <?php
 include('config/database.php');
 include('partials/header.php');
@@ -8,19 +5,22 @@ include('partials/menu.php')
 ?>
 
 <div class="container">
-
   <div class="col-md-12 text-center"><!-- seccion centro -->
-    <h1 style="text-align: center;">Solvencias solicitadas Santa Ana</h1>
     <br>
-    <p>Buscar por Carnet, Nombre, Apellido o Carrera:</p>
-    <form class="form-signin  col-md-10" method="POST" action="solvencias_cervantes.php">
-      <div class="col-md-4">
-        <input type="text" name="buscar" class="form-control" placeholder="Buscar">
+    <h2 class="text-center">SOLVENCIAS SOLICITADAS EN SANTA ANA</h2>
+    <br>
+    <div class="row justify-content-left">
+      <div class="col-md-8">
+        <form class="row g-2" method="POST" action="solvencias_cervantes.php">
+          <div class="col-md-6">
+            <input type="text" name="buscar" class="form-control" placeholder="Carnet, Nombre, Apellido o Carrera">
+          </div>
+          <div class="col-md-1">
+            <button type="submit" name="submit" class="btn btn-success">Buscar</button>
+          </div>
+        </form>
       </div>
-      <div class="col-md-2">
-        <input type="submit" name="submit" value="Buscar" class="btn btn-success" role="button">
-      </div>
-    </form>
+    </div>
 
     <?php
 
@@ -47,8 +47,8 @@ include('partials/menu.php')
 
     if ($resultado = $mysqli->query($consulta)) {
       echo "<br>";
-      echo "<table class='bordered'>";
-      echo "<thead>";
+      echo "<table class='table'>";
+      echo "<thead class='table-dark'>";
       echo "<tr>";
       echo "<th>Carnet</th>";
       echo "<th>Nombre</th>";
@@ -61,29 +61,31 @@ include('partials/menu.php')
       echo "<th>PDF</th>";
       echo "</tr>";
       echo "</thead>";
+
       /* obtener el array de objetos */
       while ($fila = $resultado->fetch_row()) {
-
+        echo "<tbody>";
         echo "<tr>";
-        echo "<td>$fila[0]</td>"; //carnet
-        echo "<td>$fila[1]</td>"; //nombre
-        echo "<td>$fila[2]</td>"; //apellido
-        echo "<td>$fila[3]</td>"; //carera
-        echo "<td>$fila[4]</td>"; //fecha
-        echo "<td>$fila[5]</td>"; //motivo
-        echo "<td>$fila[7]</td>"; //estado
-        echo "<td>$fila[8]</td>"; //email
-        echo "<td><a href='imprimir_cervantes.php?var=$fila[6]'><button type='button' class='custom-button'>Imprimir</button></a></td>"; //autor
-
+        echo "<td class='border-bottom'>$fila[0]</td>"; //carnet
+        echo "<td class='border-bottom'>$fila[1]</td>"; //nombre
+        echo "<td class='border-bottom'>$fila[2]</td>"; //apellido
+        echo "<td class='border-bottom'>$fila[3]</td>"; //carera
+        echo "<td class='border-bottom'>$fila[4]</td>"; //fecha
+        echo "<td class='border-bottom'>$fila[5]</td>"; //motivo
+        echo "<td class='border-bottom'>$fila[7]</td>"; //estado
+        echo "<td class='border-bottom'>$fila[8]</td>"; //email
+        echo "<td class='border-bottom'><a href='imprimir_cervantes.php?var=$fila[6]'><button type='button' class='custom-button'>Imprimir</button></a></td>"; //autor
         echo "</tr>";
-        echo "</tr> ";
+        echo "</tbody>";
       }
+
       echo "</table>";
       echo "<br>";
 
       /* liberar el conjunto de resultados */
       $resultado->close();
     }
+
 
     /* cerrar la conexi&oacute;n */
     $mysqli->close();
@@ -92,15 +94,8 @@ include('partials/menu.php')
 
   </div>
 </div>
-</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-<script>
-  function imprimirSolvencia() {
-    window.print();
-  }
-</script>
-<script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 
 </html>

@@ -28,8 +28,8 @@ include('partials/header.php');
           /* obtener el array de objetos */
           while ($fila = $resultado->fetch_row()) {
 
-            echo "<table>";
-            echo "<thead>";
+            echo "<table class='table'>";
+            echo "<thead class='table-dark'>";
             echo "<tr>";
             echo "<th> </th>";
             echo "<th>Nombre</th>";
@@ -53,6 +53,8 @@ include('partials/header.php');
 
             echo "</table>";
             echo "<br>";
+
+
             echo "<p>Si la información es correcta y corresponde a tu número de carnet, haz click en el <b>Motivo</b> para el que necesitas tu solvencia y puedes pasar por tu solvencia de biblioteca a la oficina técnica en la fecha indicada:</p>";
 
             $hiddenFields = [
