@@ -81,7 +81,7 @@ include('partials/menu.php');
             echo "<td>$fila[5]</td>"; //motivo
             echo "<td>$fila[7]</td>"; //estado
             echo "<td>$fila[8]</td>"; //email
-            echo "<td><a href='imprimirbricorreo.php?var=$fila[6]'><button type='button' class='btn btn-link'>Imprimir</button></a></td>"; //autor
+            echo "<td><a href='imprimir_ilobasco.php?var=$fila[6]'><button type='button' class='btn btn-link'>Imprimir</button></a></td>"; //autor
 
             echo "</tr>";
             echo "</tr> ";

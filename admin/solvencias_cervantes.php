@@ -73,7 +73,7 @@ include('partials/menu.php')
         echo "<td>$fila[5]</td>"; //motivo
         echo "<td>$fila[7]</td>"; //estado
         echo "<td>$fila[8]</td>"; //email
-        echo "<td><a href='imprimircorreo.php?var=$fila[6]'><button type='button' class='custom-button'>Imprimir</button></a></td>"; //autor
+        echo "<td><a href='imprimir_cervantes.php?var=$fila[6]'><button type='button' class='custom-button'>Imprimir</button></a></td>"; //autor
 
         echo "</tr>";
         echo "</tr> ";
@@ -93,6 +93,12 @@ include('partials/menu.php')
   </div>
 </div>
 </div>
+
+<script>
+  function imprimirSolvencia() {
+    window.print();
+  }
+</script>
 <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>

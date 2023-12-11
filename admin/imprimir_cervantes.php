@@ -6,17 +6,26 @@ include('partials/header.php');
 <script src="<?= ROOT_URL ?>js/bibliotecas.js"></script>
 <script src="<?= ROOT_URL ?>js/imprimir.js"></script>
 
+<!-- Agrega una hoja de estilo específica para la impresión -->
+<style type="text/css" media="print">
+  .no-imprimir {
+    display: none;
+  }
+</style>
+
 <body style="background-color: #fff;">
 
   <div class="container">
     <div class="row">
       <div class="col-md-2"><!-- seccion izquierda -->
         <br>
-        <input class='btn btn-primary' name="Restablecer" type="button" value="Regresar" onClick="history.back()">
+        <input class='btn btn-primary no-imprimir' name="Restablecer" type="button" value="Regresar" onClick="history.back()">
         <br>
+        <br>
+        <!-- Botón de impresión -->
+        <button class='btn btn-success no-imprimir' onclick="imprimirSolvencia()">Imprimir</button>
       </div>
       <div class="col-md-8"><!-- seccion centro -->
-
 
         <?php
 
@@ -49,7 +58,7 @@ include('partials/header.php');
             $meses = array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
             $fecha = $dias[date('w')] . ' ' . date('d') . ' de ' . $meses[date('n') - 1] . ' del ' . date('Y');
 
-            echo "<div id='muestra'>";
+            echo "<div>";
             echo "<table class='tabla'>";
             echo "<tbody>";
             echo "<tr>";
@@ -60,7 +69,7 @@ include('partials/header.php');
             echo "<td>";
             echo "<br>";
             echo "<p class='western' lang='es-SV' align='left'><span style='font-family: 'Century Schoolbook L', serif;'><span style='font-size: large;'><strong>UNIVERSIDAD CAT&Oacute;LICA DE EL SALVADOR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></span></span></p>";
-            echo "<p class='western' lang='es-SV' align='left'><span style='font-family: 'Century Schoolbook L', serif;'><span style='font-size: large;'><strong id='sede'>[Sede]</strong></span></span></p>";
+            echo "<p class='western' lang='es-SV' align='left'><span style='font-family: 'Century Schoolbook L', serif;'><span style='font-size: large; color:#000;'><strong>Biblioteca Miguel de Cervantes</strong></span></span></p>";
             echo "</td>";
             echo "<td><img src='../images/logo-unicaes-hd.png' width='125px' height='130px'></td>";
             echo "</tr>";
@@ -116,12 +125,12 @@ include('partials/header.php');
             echo "<tr>";
             echo "<td>";
             echo "<br><br><br>";
-            echo "<p class='western' lang='es-SV' align='center'><span style='font-family: 'Century Schoolbook L', serif;'><span style='font-size: large; color:#000;'><strong id='responsable'>[Responsable]</strong></span></span></p>";
+            echo "<p class='western' lang='es-SV' align='center'><span style='font-family: 'Century Schoolbook L', serif;'><span style='font-size: large; color:#000;'><strong>Msc. Celina del Rosario Baires</strong></span></span></p>";
             echo "</td>";
             echo "</tr>";
             echo "<tr>";
             echo "<td>";
-            echo "<p class='western' lang='es-SV' align='center'><span style='font-family: 'Century Schoolbook L', serif;'><span style='font-size: large; color:#000;'><strong id='cargo'>[Cargo]</strong></span></span></p>";
+            echo "<p class='western' lang='es-SV' align='center'><span style='font-family: 'Century Schoolbook L', serif;'><span style='font-size: large; color:#000;'><strong>Directora de la Biblioteca Miguel de Cervantes</strong></span></span></p>";
             echo "</td>";
             echo "</tr>";
             echo "</tbody>";
@@ -137,37 +146,19 @@ include('partials/header.php');
         $mysqli->close();
 
         ?>
-        <br><br><br>
-        <div class="panel panel-default">
-          <div class="panel-body">
-            <h3 align='center'>Eligir al Responsable de firmar</h3>
-            <br>
-            <button class='btn btn-default btn-lg btn-block' onclick="myFunctionBMC()">Biblioteca Miguel de Cervantes</button>
-            <button class='btn btn-default btn-lg btn-block' onclick="myFunctionBRI()">Biblioteca Regional Ilobasco</button>
-            <br>
-            <input type='button' class='btn btn-success btn-lg btn-block' value='Imprimir Solvencia' onclick="javascript:imprSelec('muestra')" id="imprimir" disabled="true">
-            <br>
-          </div>
-        </div>
-        <br><br><br>
-      </div>
-
-      <div class="col-md-2"><!-- seccion derecha -->
-        <!--          <br>
-          <input type='button' class='btn btn-success' value='Imprimir Solvencia' onclick="javascript:imprSelec('muestra')"/>
---> <?php
-    $codsolicitadas =  $_GET['var'];
-    echo "<br>";
-    echo "<a href='actualizarcorreo.php?var=$codsolicitadas'><button type='button' class='btn btn-primary'>Guardar Solvencia</button></a>";
-
-    ?>
 
       </div>
     </div>
 
-
     <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script>
+      function imprimirSolvencia() {
+        window.print();
+      }
+    </script>
+  </div>
 </body>
 
 </html>
