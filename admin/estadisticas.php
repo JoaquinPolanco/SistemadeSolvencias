@@ -23,9 +23,9 @@ include('partials/menu.php');
           <div class="panel-body">
             <form class="form-signin" method="POST" action="estadisticas_rango.php">
               <span id="reauth-email" class="reauth-email"></span>
-              <p>Desde: <input type="date" name="dateinicio"></p>
+              <p>Desde: <input type="date" name="dateinicio" required></p>
               <br>
-              <p>Hasta: <input type="date" name="datefin"></p>
+              <p>Hasta: <input type="date" name="datefin" required></p>
               <br>
               <input type="submit" name="submit" value="Ver ahora" class="btn btn-default" role="button">
               <br>
@@ -44,7 +44,7 @@ include('partials/menu.php');
             <form class="form-signin" method="POST" action="estadisticas_anual.php">
               <span id="reauth-email" class="reauth-email"></span>
               <p>Año a consultar:</p><br>
-              <input type="text" name="year" maxlength="4">
+              <input type="text" name="year" maxlength="4" required>
               <br><br>
               <input type="submit" name="submit" value="Ver ahora" class="btn btn-default" role="button">
               <br><br>
@@ -63,7 +63,7 @@ include('partials/menu.php');
             <form class="form-signin" method="POST" action="estadisticas_individual.php">
               <span id="reauth-email" class="reauth-email"></span>
               <p>Búsqueda por nombre, apellidos o carnet:</p>
-              <input type="text" name="buscar">
+              <input type="text" name="buscar" required>
               <br>
               <br>
               <input type="submit" name="submit" value="Ver ahora" class="btn btn-default" role="button">

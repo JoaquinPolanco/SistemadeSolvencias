@@ -33,7 +33,7 @@ include('partials/menu.php');
           $result->close();
         }
         //consultas por genero inicio
-        $consulta = "SELECT COUNT(`titulo`) FROM `solicitadas` WHERE `fechasolicitud` LIKE '$year%' AND (`titulo`='sra' OR `titulo`='srta')";
+        $consulta = "SELECT COUNT(`titulo`) FROM `solicitadas` WHERE `fechasolicitud` LIKE '$year%' AND (`titulo`='Srta' OR `titulo`='F')";
 
         if ($resultado = $mysqli->query($consulta)) {
           echo "<h3>Consulta por Género:</h3>";
@@ -52,7 +52,7 @@ include('partials/menu.php');
             echo "<tr>";
             echo "<td>$year</td>"; //año
             echo "<td>$fila[0]</td>"; //mujer
-            $consulta2 = "SELECT COUNT(`titulo`) FROM `solicitadas` WHERE `titulo`='sr' AND `fechasolicitud` LIKE '$year%'";
+            $consulta2 = "SELECT COUNT(`titulo`) FROM `solicitadas` WHERE (`titulo`='sr' OR `titulo`='M') AND `fechasolicitud` LIKE '$year%'";
             if ($resultado2 = $mysqli->query($consulta2)) {
               /* obtener el array de objetos */
               while ($fila = $resultado2->fetch_row()) {

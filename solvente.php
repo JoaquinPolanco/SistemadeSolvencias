@@ -21,7 +21,7 @@ include('partials/header.php');
         $carnet = $_GET['var1'];
         $email = $_GET['var2'];
 
-        $consulta = "SELECT title, firstname, surname, othernames, userid, initials FROM borrowers WHERE userid = '$carnet'";
+        $consulta = "SELECT sex, firstname, surname, othernames, userid, initials FROM borrowers WHERE userid = '$carnet'";
 
         if ($resultado = $mysqli->query($consulta)) {
 

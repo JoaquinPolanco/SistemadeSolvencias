@@ -6,7 +6,6 @@ include('partials/header.php');
 <script src="<?= ROOT_URL ?>js/bibliotecas.js"></script>
 <script src="<?= ROOT_URL ?>js/imprimir.js"></script>
 
-
 <!-- Agrega una hoja de estilo específica para la impresión -->
 <style type="text/css" media="print">
   .no-imprimir {
@@ -14,7 +13,7 @@ include('partials/header.php');
   }
 </style>
 
-<body style="background-color: #fff;">
+<body>
 
   <div class="container">
     <div class="row">
@@ -151,8 +150,8 @@ include('partials/header.php');
       </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
     <script>
       function imprimirSolvencia() {
