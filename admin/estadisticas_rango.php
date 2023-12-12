@@ -35,7 +35,7 @@ include('partials/menu.php');
           $result->close();
         }
         //consultas por genero inicio
-        $consulta = "SELECT COUNT(`titulo`) FROM `solicitadas` WHERE `fechasolicitud` BETWEEN '$date1' AND '$date2' AND (`titulo`='sra' OR `titulo`='srta')";
+        $consulta = "SELECT COUNT(`titulo`) FROM `solicitadas` WHERE `fechasolicitud` BETWEEN '$date1' AND '$date2' AND (`titulo`='F' OR `titulo`='srta')";
 
         if ($resultado = $mysqli->query($consulta)) {
           echo "<h3>POR GÉNERO:</h3>";
@@ -54,7 +54,7 @@ include('partials/menu.php');
             echo "<tr>";
             echo "<td>$date1 - $date2</td>"; //periodo
             echo "<td>$fila[0]</td>"; //mujer
-            $consulta2 = "SELECT COUNT(`titulo`) FROM `solicitadas` WHERE `fechasolicitud` BETWEEN '$date1' AND '$date2' AND (`titulo`='' OR `titulo`='sr')";
+            $consulta2 = "SELECT COUNT(`titulo`) FROM `solicitadas` WHERE `fechasolicitud` BETWEEN '$date1' AND '$date2' AND (`titulo`='M' OR `titulo`='sr')";
             if ($resultado2 = $mysqli->query($consulta2)) {
               /* obtener el array de objetos */
               while ($fila = $resultado2->fetch_row()) {
@@ -91,6 +91,9 @@ include('partials/menu.php');
           echo "<th>Ciencias Empresariales</th>";
           echo "<th>Ingeniería y Arquitectura</th>";
           echo "<th>Ciencias de la Salud</th>";
+          echo "<th>Escuela de Posgrados</th>";
+          echo "<th>Facultad Multidisciplinaria de Ilobasco</th>";
+          echo "<th>Facultad en Blanco</th>";
           echo "<th>Total</th>";
           echo "</tr>";
           echo "</thead>";
@@ -115,6 +118,27 @@ include('partials/menu.php');
                       /* obtener el array de objetos */
                       while ($fila = $resultado4->fetch_row()) {
                         echo "<td>$fila[0]</td>"; //Salud
+                        $consulta6 = "SELECT COUNT(`facultad`) FROM `solicitadas` WHERE `fechasolicitud` BETWEEN '$date1' AND '$date2'AND (`facultad` LIKE '%escuela de posgrado%' OR `facultad` LIKE '%escuela de postgrado%')";
+                        if ($resultado6 = $mysqli->query($consulta6)) {
+                          /* obtener el array de objetos */
+                          while ($fila = $resultado6->fetch_row()) {
+                            echo "<td>$fila[0]</td>"; //escuela de posgrado
+                          }
+                        }
+                        $consulta7 = "SELECT COUNT(`facultad`) FROM `solicitadas` WHERE `fechasolicitud` BETWEEN '$date1' AND '$date2' AND (`facultad` LIKE '%ilobasco%' OR `facultad` LIKE '%paracentral%')";
+                        if ($resultado7 = $mysqli->query($consulta7)) {
+                          /* obtener el array de objetos */
+                          while ($fila = $resultado7->fetch_row()) {
+                            echo "<td>$fila[0]</td>"; //Facultad Multidisciplinaria de Ilobasco
+                          }
+                        }
+                        $consulta8 = "SELECT COUNT(`facultad`) FROM `solicitadas` WHERE `fechasolicitud` BETWEEN '$date1' AND '$date2' AND `facultad` = ''";
+                        if ($resultado8 = $mysqli->query($consulta8)) {
+                          /* obtener el array de objetos */
+                          while ($fila = $resultado8->fetch_row()) {
+                            echo "<td>$fila[0]</td>"; //Facultad En blanco
+                          }
+                        }
                         $consulta5 = "SELECT COUNT(`facultad`) FROM `solicitadas` WHERE `fechasolicitud` BETWEEN '$date1' AND '$date2'";
                         if ($resultado5 = $mysqli->query($consulta5)) {
                           /* obtener el array de objetos */

@@ -66,7 +66,8 @@ include('partials/menu.php')
       echo "<th>Motivo</th>";
       echo "<th>Estado</th>";
       echo "<th>E-mail</th>";
-      echo "<th>PDF</th>";
+      echo "<th>Imprimir</th>";
+      echo "<th>Guardar</th>";
       echo "</tr>";
       echo "</thead>";
 
@@ -83,7 +84,7 @@ include('partials/menu.php')
         echo "<td class='border-bottom'>$fila[7]</td>"; //estado
         echo "<td class='border-bottom'>$fila[8]</td>"; //email
         echo "<td class='border-bottom'><a href='imprimir_cervantes.php?var=$fila[6]'><button type='button' class='btn btn-dark'>Imprimir</button></a></td>";
-
+        echo "<td class='border-bottom'><a href='download_pdf.php?var=$fila[6]'><button type='button' class='btn btn-primary'>Descargar</button></a></td>";
         echo "</tr>";
         echo "</tbody>";
       }
