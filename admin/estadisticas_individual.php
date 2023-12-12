@@ -11,12 +11,12 @@ include('partials/menu.php');
     <div class="row">
       <div class="col-md-1"><!-- seccion izquierda -->
         <br>
-        <a href="estadisticas.php"><button type="button" class="btn btn-info">Regresar</button></a>
+        <a href="estadisticas.php"><button type="button" class="btn btn-dark">Regresar</button></a>
       </div>
 
       <div class="col-md-10"><!-- seccion centro -->
         <br>
-        <h2 style="text-align: center;">Solvencias solicitadas</h2>
+        <h2 style="text-align: center;">SOLVENCIAS SOLICITADAS</h2>
 
         <?php
         $buscar = $_POST['buscar'];
@@ -36,8 +36,8 @@ include('partials/menu.php');
 
         if ($resultado = $mysqli->query($consulta)) {
           echo "<br>";
-          echo "<table class='bordered'>";
-          echo "<thead>";
+          echo "<table class='table table-bordered'>";
+          echo "<thead class='table-dark text-center'>";
           echo "<tr>";
           echo "<th>Carnet</th>";
           echo "<th>Nombre</th>";
@@ -81,8 +81,8 @@ include('partials/menu.php');
   </div>
 
 
-  <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>

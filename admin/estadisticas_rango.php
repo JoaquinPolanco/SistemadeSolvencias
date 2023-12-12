@@ -11,12 +11,13 @@ include('partials/menu.php');
     <div class="row">
       <div class="col-md-1"><!-- seccion izquierda -->
         <br>
-        <a href="estadisticas.php"><button type="button" class="btn btn-info">Regresar</button></a>
+        <a href="estadisticas.php"><button type="button" class="btn btn-dark">Regresar</button></a>
       </div>
 
       <div class="col-md-10"><!-- seccion centro -->
         <br>
-        <h2 style="text-align: center;">Estadisticas de las solvencias solicitadas</h2>
+        <h2 style="text-align: center;">ESTADÍSTICAS POR PERÍODO DE TIEMPO</h2>
+        <br>
 
         <?php
 
@@ -37,9 +38,9 @@ include('partials/menu.php');
         $consulta = "SELECT COUNT(`titulo`) FROM `solicitadas` WHERE `fechasolicitud` BETWEEN '$date1' AND '$date2' AND (`titulo`='sra' OR `titulo`='srta')";
 
         if ($resultado = $mysqli->query($consulta)) {
-          echo "<h3>Consulta por Género:</h3>";
-          echo "<table class='bordered'>";
-          echo "<thead>";
+          echo "<h3>POR GÉNERO:</h3>";
+          echo "<table class='table table-bordered'>";
+          echo "<thead class='table-dark text-center'>";
           echo "<tr>";
           echo "<th>Periodo consultado</th>";
           echo "<th>Mujeres</th>";
@@ -81,13 +82,13 @@ include('partials/menu.php');
 
         if ($resultado = $mysqli->query($consulta)) {
           echo "<br>";
-          echo "<h3>Consulta por Facultad:</h3>";
-          echo "<table class='bordered'>";
-          echo "<thead>";
+          echo "<h3>POR FACULTAD:</h3>";
+          echo "<table class='table table-bordered'>";
+          echo "<thead class='table-dark text-center'>";
           echo "<tr>";
           echo "<th>Periodo consultado</th>";
-          echo "<th>C. Humanidades</th>";
-          echo "<th>C. Empresariales</th>";
+          echo "<th>Ciencias y Humanidades</th>";
+          echo "<th>Ciencias Empresariales</th>";
           echo "<th>Ingeniería y Arquitectura</th>";
           echo "<th>Ciencias de la Salud</th>";
           echo "<th>Total</th>";
@@ -141,9 +142,9 @@ include('partials/menu.php');
 
         if ($resultado = $mysqli->query($consulta)) {
           echo "<br>";
-          echo "<h3>Consulta por Motivo:</h3>";
-          echo "<table class='bordered'>";
-          echo "<thead>";
+          echo "<h3>POR MOTIVO:</h3>";
+          echo "<table class='table table-bordered'>";
+          echo "<thead class='table-dark text-center'>";
           echo "<tr>";
           echo "<th>Periodo consultado</th>";
           echo "<th>Graduación</th>";

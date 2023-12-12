@@ -2,7 +2,6 @@
 include('config/database.php');
 include('partials/header.php');
 include('partials/menu.php');
-
 ?>
 
 <body style="background-color: #fff;">
@@ -11,12 +10,13 @@ include('partials/menu.php');
     <div class="row">
       <div class="col-md-1"><!-- seccion izquierda -->
         <br>
-        <a href="estadisticas.php"><button type="button" class="btn btn-info">Regresar</button></a>
+        <a href="estadisticas.php"><button type="button" class="btn btn-dark">Regresar</button></a>
       </div>
 
       <div class="col-md-10"><!-- seccion centro -->
         <br>
-        <h2 style="text-align: center;">Estadisticas de las solvencias solicitadas</h2>
+        <h2 style="text-align: center;">ESTADÍSTICAS ANUALES</h2>
+        <br>
 
         <?php
 
@@ -36,11 +36,11 @@ include('partials/menu.php');
         $consulta = "SELECT COUNT(`titulo`) FROM `solicitadas` WHERE `fechasolicitud` LIKE '$year%' AND (`titulo`='Srta' OR `titulo`='F')";
 
         if ($resultado = $mysqli->query($consulta)) {
-          echo "<h3>Consulta por Género:</h3>";
-          echo "<table class='bordered'>";
-          echo "<thead>";
+          echo "<h3>POR GÉNERO:</h3>";
+          echo "<table class='table table-bordered'>";
+          echo "<thead class='table-dark text-center'>";
           echo "<tr>";
-          echo "<th>Año consultado</th>";
+          echo "<th>Año</th>";
           echo "<th>Mujeres</th>";
           echo "<th>Hombres</th>";
           echo "<th>Total</th>";
@@ -80,11 +80,11 @@ include('partials/menu.php');
 
         if ($resultado = $mysqli->query($consulta)) {
           echo "<br>";
-          echo "<h3>Consulta por Facultad:</h3>";
-          echo "<table class='bordered'>";
-          echo "<thead>";
+          echo "<h3>POR FACULTAD:</h3>";
+          echo "<table class='table table-bordered'>";
+          echo "<thead class='table-dark text-center'>";
           echo "<tr>";
-          echo "<th>Año consultado</th>";
+          echo "<th>Año</th>";
           echo "<th>C. Humanidades</th>";
           echo "<th>C. Empresariales</th>";
           echo "<th>Ingeniería y Arquitectura</th>";
@@ -140,11 +140,11 @@ include('partials/menu.php');
 
         if ($resultado = $mysqli->query($consulta)) {
           echo "<br>";
-          echo "<h3>Consulta por Motivo:</h3>";
-          echo "<table class='bordered'>";
-          echo "<thead>";
+          echo "<h3>POR MOTIVO:</h3>";
+          echo "<table class='table table-bordered'>";
+          echo "<thead class='table-dark text-center'>";
           echo "<tr>";
-          echo "<th>Año consultado</th>";
+          echo "<th>Año</th>";
           echo "<th>Graduación</th>";
           echo "<th>Reingreso</th>";
           echo "<th>Retiro</th>";
@@ -204,15 +204,14 @@ include('partials/menu.php');
 
       </div>
 
-
-      <div class="col-md-2"><!-- seccion derecha --></div>
+      <div class="col-md-1"><!-- seccion derecha --></div>
 
     </div>
   </div>
 
 
-  <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
