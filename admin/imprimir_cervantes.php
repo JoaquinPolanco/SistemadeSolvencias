@@ -69,12 +69,23 @@ include('config/database.php');
         if ($resultado = $mysqli->query($consulta)) {
 
           while ($fila = $resultado->fetch_row()) {
-            //echo "$fila[0]";//carnet
-            //echo "$fila[1]";//nombre
-            //echo "$fila[2]";//apellido
-            //echo "$fila[3]";//carera
-            //echo "$fila[4]";//fecha
-            //echo "$fila[5]";//motivo
+            $insertQuery = "INSERT INTO `historial` (`codsolicitadas`) VALUES ('$codsolicitadas')";
+            $insertResult = mysqli_query($mysqli, $insertQuery);
+
+            // Verificar si la inserción en la tabla 'historial' fue exitosa
+            if (!$insertResult) {
+                echo "Error al insertar en la tabla de historial: " . mysqli_error($mysqli);
+            }
+
+            // Actualizar el campo 'impreso' a 'SI' en la tabla 'solicitadas'
+            $updateQuery = "UPDATE `solicitadas` SET `impreso` = 'SI' WHERE codsolicitadas = '$codsolicitadas'";
+            $updateResult = mysqli_query($mysqli, $updateQuery);
+
+            // Verificar si la actualización fue exitosa
+            if (!$updateResult) {
+                echo "Error al actualizar el campo 'impreso': " . mysqli_error($mysqli);
+            }
+        
             $dias = array("Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sábado");
             $meses = array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
             $fecha = $dias[date('w')] . ' ' . date('d') . ' de ' . $meses[date('n') - 1] . ' del ' . date('Y');

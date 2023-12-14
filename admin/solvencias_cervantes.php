@@ -46,11 +46,11 @@ include('partials/menu.php')
     $buscar = $_POST['buscar'];
     $ilobasco = "FACULTAD MULTIDISCIPLINARIA DE ILOBASCO";
     $consulta = "SELECT carnet, nombres, apellidos, carrera, fechasolicitud, tiposolvencia, codsolicitadas, estado, email FROM `solicitadas`
-                        WHERE email != '' AND
-                        impreso = '' AND
-                        facultad != '$ilobasco'
-                        AND (carnet LIKE '%$buscar%' OR nombres LIKE '%$buscar%' OR apellidos LIKE '%$buscar%' OR carrera LIKE '%$buscar%')
-                        ORDER BY fechasolicitud DESC";
+                            WHERE email != '' AND
+                            impreso = '' AND
+                            facultad != '$ilobasco' AND
+                            (carnet LIKE '%$buscar%' OR nombres LIKE '%$buscar%' OR apellidos LIKE '%$buscar%' OR carrera LIKE '%$buscar%')
+                            ORDER BY fechasolicitud DESC";
     //$consulta = "SELECT carnet, nombres, apellidos, carrera, fechasolicitud, tiposolvencia, codsolicitadas, estado, email FROM `solicitadas` WHERE email != '' AND impreso = '' AND facultad != '$ilobasco' ORDER BY fechasolicitud DESC";
 
     if ($resultado = $mysqli->query($consulta)) {
@@ -84,7 +84,7 @@ include('partials/menu.php')
         echo "<td class='border-bottom'>$fila[7]</td>"; //estado
         echo "<td class='border-bottom'>$fila[8]</td>"; //email
         echo "<td class='border-bottom'><a href='imprimir_cervantes.php?var=$fila[6]'><button type='button' class='btn btn-dark'>Imprimir</button></a></td>";
-        echo "<td class='border-bottom'><a href='download_pdf.php?var=$fila[6]'><button type='button' class='btn btn-primary'>Descargar</button></a></td>";
+        echo "<td class='border-bottom'><a href='descargar_cervantes.php?var=$fila[6]'><button type='button' class='btn btn-dark'>Descargar</button></a></td>";
         echo "</tr>";
         echo "</tbody>";
       }
@@ -106,6 +106,11 @@ include('partials/menu.php')
   </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script>
+    function recargarPagina() {
+      location.reload();
+    }
+  </script>
 </body>
 
 </html>

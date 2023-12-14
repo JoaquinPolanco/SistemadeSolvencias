@@ -71,24 +71,33 @@ include('partials/header.php');
             // Función para generar un formulario con botón
             function generateForm($action, $tipo, $label)
             {
-              global $hiddenFields;
-
-              echo "<form class='form-signin col-md-3' method='POST' action='$action'>";
-              foreach ($hiddenFields as $name => $value) {
-                echo "<input type='hidden' name='$name' value='$value'>";
-              }
-              echo "<input type='hidden' name='tipo' value='$tipo'>";
-              echo "<input type='submit' name='submit' value='$label' class='custom-button' role='button'>";
-              echo "</form>";
+                global $hiddenFields;
+            
+                echo "<div class='col-md-3 text-center'>";
+                echo "<form class='form-signin d-inline-block' method='POST' action='$action'>";
+                
+                foreach ($hiddenFields as $name => $value) {
+                    echo "<input type='hidden' name='$name' value='$value'>";
+                }
+                
+                echo "<input type='hidden' name='tipo' value='$tipo'>";
+                echo "<input type='submit' name='submit' value='$label' class='custom-button' role='button'>";
+                echo "</form>";
+                echo "</div>";
             }
+            
+            echo "<div class='row'>";
 
             // Generar formularios para cada tipo
             generateForm('solicitada_graduacion.php', 'GRADUACIÓN', 'Graduación');
             generateForm('solicitada_reingreso.php', 'REINGRESO', 'Reingreso');
             generateForm('solicitada_retiro.php', 'RETIRO', 'Retiro');
             generateForm('solicitada_otros.php', 'OTROS', 'Otros motivos');
-
+            
+            echo "</div>";
             echo "<br>";
+            
+            
           }
 
           /* liberar el conjunto de resultados */
