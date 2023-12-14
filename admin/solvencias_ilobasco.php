@@ -11,7 +11,7 @@ include('partials/menu.php');
   <div class="container">
     <div class="col-md-25 text-center"><!-- seccion centro -->
       <br>
-      <h2 class="text-center">SOLVENCIAS SOLICITADAS EN ILOBASCO</h2>
+      <h2 class="text-center">SOLVENCIAS SOLICITADAS EN ILOBASCO priube</h2>
       <br>
 
       <nav class="navbar bg-body-tertiary">
